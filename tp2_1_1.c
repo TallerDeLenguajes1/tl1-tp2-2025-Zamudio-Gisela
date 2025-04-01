@@ -1,7 +1,19 @@
 #include <stdio.h>
- int main() {
+#include <stdlib.h>
+#include <time.h>
+#define N 20
 
-    printf("efewfe");
+int main() {
 
-    return 0;
- }
+   int i;
+   double vt[N];
+   srand(time(NULL));
+   
+   for (int i = 0; i < N; i++)
+   {
+      vt[i] = 1+rand()%100;
+      printf(" %.2f -", vt[i]);
+   }
+   
+   return 0;
+}
